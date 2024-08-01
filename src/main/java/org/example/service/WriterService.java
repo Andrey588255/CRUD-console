@@ -10,4 +10,6 @@ public interface WriterService extends Service<Writer, Long>{
     Long update(Writer writer);
 
     List<Writer> gatAll();
+
+    List<Writer> getAll();
 }

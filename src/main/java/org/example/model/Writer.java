@@ -78,7 +78,8 @@ public class Writer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Writer writer = (Writer) o;
-        return id.equals(writer.id) && Objects.equals(firstName, writer.firstName) && Objects.equals(lastName, writer.lastName) && Objects.equals(posts, writer.posts);
+        return id.equals(writer.id) && Objects.equals(firstName, writer.firstName)
+                && Objects.equals(lastName, writer.lastName) && Objects.equals(posts, writer.posts);
     }
 
     @Override

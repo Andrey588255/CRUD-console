@@ -5,15 +5,13 @@ import org.example.model.PostStatus;
 import org.example.model.Writer;
 import org.example.repository.PostRepository;
 import org.example.service.PostServiceImpl;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
 
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 
 import java.time.LocalDateTime;
@@ -22,16 +20,14 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@ExtendWith(MockitoExtension.class)
+
 class PostServiceImplTest {
-    @Mock
-    PostRepository postMock;
-    @InjectMocks
-    PostServiceImpl postService = new PostServiceImpl();
+    private final PostRepository postMock = Mockito.mock(PostRepository.class);
+    private final PostServiceImpl postService = new PostServiceImpl(postMock);
     private ArgumentCaptor<Long> postIdCaptor;
     private ArgumentCaptor<Long> writerIdCaptor;
     private ArgumentCaptor<Post> postCaptor;
-    private ArgumentCaptor<Writer> writerCaptor;
     private long testPostId;
     private long testWriterId;
     private Post testPost;
@@ -51,19 +47,18 @@ class PostServiceImplTest {
         postIdCaptor = ArgumentCaptor.forClass(Long.class);
         writerIdCaptor = ArgumentCaptor.forClass(Long.class);
         postCaptor = ArgumentCaptor.forClass(Post.class);
-        writerCaptor = ArgumentCaptor.forClass(Writer.class);
         testPostList = List.of(testPost);
     }
 
     @Test
-    void removePostTest() {
+    public void removePostTest() {
         postService.remove(testPostId);
         Mockito.verify(postMock).delete(postIdCaptor.capture());
         assertEquals(testPostId, postIdCaptor.getValue());
     }
 
     @Test
-    void addPostTest() {
+    public void addPostTest() {
         Mockito.when(postMock.save(testPost, testWriterId)).thenReturn(testPostId);
         Long id = postService.add(testPost, testWriterId);
         Mockito.verify(postMock).save(postCaptor.capture(), writerIdCaptor.capture());
@@ -73,7 +68,7 @@ class PostServiceImplTest {
     }
 
     @Test
-    void updatePostTest() {
+    public void updatePostTest() {
         Mockito.when(postMock.save(testPost, testWriterId)).thenReturn(testPostId);
         Long id = postService.update(testPost, testWriterId);
         Mockito.verify(postMock).save(postCaptor.capture(), writerIdCaptor.capture());
@@ -83,7 +78,7 @@ class PostServiceImplTest {
     }
 
     @Test
-    void getPostTest() {
+    public void getPostTest() {
         Mockito.when(postMock.get(testPostId)).thenReturn(testPost);
         Post currentPost = postService.get(testPostId);
         Mockito.verify(postMock).get(postIdCaptor.capture());
@@ -92,7 +87,7 @@ class PostServiceImplTest {
     }
 
     @Test
-    void getByWriterIdTest() {
+    public void getByWriterIdTest() {
         Mockito.when(postMock.getByWriterId(testWriterId)).thenReturn(testPostList);
         List<Post> postsList = postService.getByWriterId(testWriterId);
         Mockito.verify(postMock).getByWriterId(writerIdCaptor.capture());

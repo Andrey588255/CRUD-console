@@ -8,10 +8,14 @@ import org.example.repository.RepositoryFactory;
 import java.util.List;
 
 public class PostServiceImpl implements PostService {
-    private PostRepository pRepo;
+    private final PostRepository pRepo;
 
     public PostServiceImpl() {
         this.pRepo = RepositoryFactory.getPostRepository();
+    }
+
+    public PostServiceImpl(PostRepository pRepo) {
+        this.pRepo = pRepo;
     }
 
     @Override

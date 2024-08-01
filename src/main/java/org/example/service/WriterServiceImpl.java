@@ -6,21 +6,24 @@ import org.example.repository.WriterRepository;
 
 import java.util.List;
 
-public class WriterServiceImpl implements WriterService{
+public class WriterServiceImpl implements WriterService {
     private WriterRepository wRepo;
 
-    public WriterServiceImpl(){
+    public WriterServiceImpl() {
         this.wRepo = RepositoryFactory.getWriterRepository();
     }
+
     @Override
     @Deprecated
     public Long add(Writer addEntity, Long ownerId) {
-        throw new IllegalArgumentException("Writer can not have the owner, operation with ownerId parameter is forbidden!");
+        throw new IllegalArgumentException("Writer can not have the owner," +
+                " operation with ownerId parameter is forbidden!");
     }
 
     @Override
-    public Long update(Writer entity, Long ownerId){
-        throw new IllegalArgumentException("Writer can not have the owner, operation with ownerId parameter is forbidden!");
+    public Long update(Writer entity, Long ownerId) {
+        throw new IllegalArgumentException("Writer can not have the owner," +
+                " operation with ownerId parameter is forbidden!");
     }
 
     @Override
@@ -35,7 +38,7 @@ public class WriterServiceImpl implements WriterService{
 
     @Override
     public void remove(Long writerId) {
-        wRepo.delete(writerId); ;
+        wRepo.delete(writerId);
     }
 
     @Override
@@ -46,5 +49,10 @@ public class WriterServiceImpl implements WriterService{
     @Override
     public Writer get(Long writerId) {
         return wRepo.get(writerId);
+    }
+
+      @Override
+    public List<Writer> getAll() {
+        return wRepo.getAll();
     }
 }

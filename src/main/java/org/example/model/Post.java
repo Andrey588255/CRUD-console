@@ -43,7 +43,8 @@ public class Post {
     public Post() {
     }
 
-    public Post(Long id, String content, LocalDateTime created, LocalDateTime updated, List<Label> labels, PostStatus status) {
+    public Post(Long id, String content, LocalDateTime created, LocalDateTime updated,
+                List<Label> labels, PostStatus status) {
         this.id = id;
         this.content = content;
         this.created = created;

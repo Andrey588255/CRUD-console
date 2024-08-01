@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="309103ab-0f94-4d42-8bc5-c7347125877d" name="Changes" comment="1" />
+    <list default="true" id="309103ab-0f94-4d42-8bc5-c7347125877d" name="Changes" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/WriterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/WriterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/WriterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/WriterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hiber.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/PostServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/PostServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/WriterServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/WriterServiceImplTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +40,9 @@
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="z9hbm8d5" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -42,33 +57,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Application.Console.executor": "Debug",
-    "Application.MainTest (1).executor": "Run",
-    "Application.MainTest.executor": "Run",
-    "JUnit.LabelServiceImplTest.addLabelTest.executor": "Run",
-    "JUnit.LabelServiceImplTest.executor": "Run",
-    "JUnit.LabelServiceImplTest.getByPostIdTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.CRUD_console [clean].executor": "Run",
-    "Maven.CRUD_console [deploy].executor": "Run",
-    "Maven.CRUD_console [install].executor": "Run",
-    "Maven.CRUD_console [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/1/Idea Project/CRUD console",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Console.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in CRUD_console.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LabelServiceImplTest.addLabelTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LabelServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LabelServiceImplTest.getByPostIdTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostServiceImplTest.removePostTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CRUD_console [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CRUD_console [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CRUD_console [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CRUD_console [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CRUD_console [site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CRUD_console [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CRUD_console [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1/Idea Project/CRUD-console2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.service" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Idea Project\CRUD-console2\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.LabelServiceImplTest.addLabelTest">
+  <component name="RunManager" selected="Application.Console">
     <configuration name="Console" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Console" />
       <module name="CRUD_console" />
@@ -82,14 +114,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTest" />
       <module name="CRUD_console" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LabelServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in CRUD_console" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CRUD_console" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CRUD_console" />
       <extension name="coverage">
         <pattern>
@@ -98,13 +138,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LabelServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.PostServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LabelServiceImplTest.addLabelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostServiceImplTest.removePostTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CRUD_console" />
       <extension name="coverage">
         <pattern>
@@ -113,24 +153,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LabelServiceImplTest" />
-      <option name="METHOD_NAME" value="addLabelTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LabelServiceImplTest.getByPostIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CRUD_console" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LabelServiceImplTest" />
-      <option name="METHOD_NAME" value="getByPostIdTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.PostServiceImplTest" />
+      <option name="METHOD_NAME" value="removePostTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LabelServiceImplTest.addLabelTest" />
-        <item itemvalue="JUnit.LabelServiceImplTest.getByPostIdTest" />
         <item itemvalue="Application.Console" />
-        <item itemvalue="Application.MainTest (1)" />
-        <item itemvalue="JUnit.LabelServiceImplTest" />
+        <item itemvalue="Application.MainTest" />
+        <item itemvalue="JUnit.PostServiceImplTest" />
+        <item itemvalue="JUnit.PostServiceImplTest.removePostTest" />
+        <item itemvalue="JUnit.All in CRUD_console" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719928584589</updated>
+      <workItem from="1721403858454" duration="1594000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -165,6 +190,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
@@ -181,6 +209,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/example/WriterServiceImplTest.java</url>
           <line>22</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/service/PostServiceImpl.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/view/View.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-defaults>

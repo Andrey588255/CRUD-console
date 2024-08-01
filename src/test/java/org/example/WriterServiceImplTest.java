@@ -37,6 +37,19 @@ class WriterServiceImplTest {
         MockitoAnnotations.initMocks(this);
     }
 
+    @BeforeEach
+    void setUp() {
+        Mockito.reset(writerMock);
+        writerCaptor = ArgumentCaptor.forClass(Writer.class);
+        idCaptor = ArgumentCaptor.forClass(Long.class);
+        testWriterId = 100L;
+        testWriter = new Writer(testWriterId, "testName", "testSoName");
+        testWritersList = Arrays.asList(
+                new Writer(1L, "test1", "testSoName1"),
+                new Writer(2L, "test2", "testSoName2"),
+                new Writer(3L, "test3", "testSoName3"));
+    }
+
     @Test
     void removeWriter() {
         writerService.remove(testWriterId);
@@ -79,7 +92,7 @@ class WriterServiceImplTest {
     @Test
     void getAllWriters() {
         Mockito.when(writerMock.getAll()).thenReturn(testWritersList);
-        List<Writer> currentList = writerService.gatAll();
+        List<Writer> currentList = writerService.getAll();
         Mockito.verify(writerMock).getAll();
         assertEquals(testWritersList, currentList);
     }
